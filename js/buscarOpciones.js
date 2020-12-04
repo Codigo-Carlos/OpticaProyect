@@ -1,3 +1,4 @@
+
 new Vue({
     el: "#listaTipos",
     data: {
@@ -16,7 +17,14 @@ new Vue({
       tipo_sel: '',
       base_sel:'',
       armazon_sel: '',
-
+      prisma:'',
+      fecha_e:'',
+      fecha_r:'',
+      nom_med:'',
+      rut_med:'',
+      observacion:'',
+      valor:'',
+      distancia_p:'',
     },
     methods: {
       cargaMateriales: async function () {

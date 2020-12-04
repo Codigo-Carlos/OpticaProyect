@@ -66,7 +66,7 @@ $usuarios = $modelo->cargarUsuarios();
                             <h4 v-if="formtype === 'edit'" class="center">Editar Usuario</h4>
                             <p>{{alerta}}</p> 
 
-                            <div class="input-field"><input type="hidden" :value="orut">
+                            <div class="input-field"><input type="hidden" v-model="orut">
                             </div>
 
                             <div class="input-field ">
@@ -86,10 +86,10 @@ $usuarios = $modelo->cargarUsuarios();
                             </div>
 
                             <div v-if="formtype === 'edit'" class="input-field" >
-                                <select v-model="vestado"  class="browser-default">
-                                    <option value="" disabled>Bloqueo de cuenta</option>
-                                    <option value="1">HABILITADO</option>
-                                    <option value="0">BLOQUEADO</option>
+                                <select v-model="vestado" class="browser-default">
+                                    <option v-for="option in estados" v-bind:value="option.value">
+                                        {{ option.nombre }}
+                                    </option>
                                 </select>
                             </div>
                             <form action=# >

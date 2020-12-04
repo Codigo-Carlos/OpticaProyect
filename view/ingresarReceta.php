@@ -256,8 +256,11 @@
 
                 <div class="col l4 m12 s12 center border">
                     <p>Fecha Retiro</p>
+                    <input type="date" v-model = "fecha_e" name="trip-start"
+                    value="2018-07-22"
+                    min="2018-01-01" max="2018-12-31">
                     <div class="input-field">
-                        <input type="text" class="datepicker" name="fecha" v-model = "fecha_e">
+                        <input type="text" class="datepicker" name="fecha" id = "fecha_e">
                         <label for="fecha">Fecha</label>
                         <button v-on:click="crearReceta()" class="btn-large">Crear REceta</button>
                     </div>
@@ -266,12 +269,33 @@
 
 
 
-
+                <div>
+            <p>esfera isquierda {{i_esfera}}</p> 
+            <p>cilidnro isquierdo  {{i_cilindro}}</p>
+            <p>eje isquierdo {{i_eje}}</p>
+            <p>esfera derecha {{d_esfera}}</p>
+            <p>cilindro derecho{{d_cilindro}}</p>
+            <p>eje derecho {{d_eje}}</p>
+            
+            {{material_sel}}
+            {{tipo_sel}}
+            {{base_sel}}
+            {{armazon_sel}}
+            {{prisma}}
+            {{fecha_e}}
+            {{fecha_r}}
+            {{nom_med}}
+            {{rut_med}}
+            {{observacion}}
+            {{valor}}
+            {{distancia_p}}
+                </div>
 
 
 
             </div>
 
+            
 
 
 

@@ -5,7 +5,7 @@ require_once("../models/Receta.php");
 
 class ControlCrearReceta{
 
-
+    
     
 
 
